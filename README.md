@@ -10,7 +10,7 @@
          
          ```
          浏览器打开 localhost:4000
-###关键技术
+### 关键技术
 - [ES6](http://es6.ruanyifeng.com/)
 - [gulp](http://www.gulpjs.com.cn/docs/api/)
 - [jade](http://jade-lang.com/reference/includes/)
