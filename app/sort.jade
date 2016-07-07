@@ -1,0 +1,53 @@
+//
+   Created by Administrator on 2016/7/6.
+extends ./components/layout/layout
+block head
+    title 分类
+    include ./components/header/headerCss
+    //页面所需css
+    link(rel="styleSheet" href="./static/css/index.css")
+block content
+    include ./components/header/header
+    +header('张某的微店')
+        .sort-search-box
+            .sort-search-box-left.mui-clearfix
+                span.mui-btn.mui-btn-success
+                    | 全部商品
+            .sort-search-box-right.mui-clearfix
+                input.sort-search-box-input(type='text', placeholder='请输入产品编号')
+                span.icon-uniE90A.sort-search-box-icon
+    .mui-content.ws-content-gray
+        .sort-box
+            ul.mui-table-view.mui-grid-view
+                li.mui-table-view-cell.mui-media.mui-col-xs-4
+                    a.sort-box-href(href='')
+                        img.sort-box-img(src='./static/img/hot-1.png')
+                        .sort-text
+                            | 最新上市
+                li.mui-table-view-cell.mui-media.mui-col-xs-4
+                    a.sort-box-href(href='')
+                        img.sort-box-img(src='./static/img/hot-2.png')
+                        .sort-text
+                            | 最新上市
+                li.mui-table-view-cell.mui-media.mui-col-xs-4
+                    a.sort-box-href(href='')
+                        img.sort-box-img(src='./static/img/hot-3.png')
+                        .sort-text
+                            | 最新上市
+                li.mui-table-view-cell.mui-media.mui-col-xs-4
+                    a.sort-box-href(href='')
+                        img.sort-box-img(src='./static/img/hot-4.png')
+                        .sort-text
+                            | 最新上市
+                li.mui-table-view-cell.mui-media.mui-col-xs-4
+                    a.sort-box-href(href='')
+                        img.sort-box-img(src='./static/img/hot-1.png')
+                        .sort-text
+                            | 最新上市
+                li.mui-table-view-cell.mui-media.mui-col-xs-4
+                    a.sort-box-href(href='')
+                        img.sort-box-img(src='./static/img/hot-2.png')
+                        .sort-text
+                            | 最新上市
+    include ./components/footer/footer
+    include ./components/footer/footCommon

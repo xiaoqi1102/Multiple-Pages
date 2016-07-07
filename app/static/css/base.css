@@ -1,0 +1,114 @@
+/*reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,"Hiragino Sans GB",Arial,sans-serif;
+}
+
+html{font-size: 62.5%;}
+body {background: none repeat scroll 0 0 #fff;color: #333;font-size: 1.4rem;margin: 0 auto;padding: 0;height: 100%;}
+h1{font-size: 2.4rem;}
+h2{font-size: 2.0rem;}
+h3{font-size: 1.8rem;}
+h4{font-size: 1.6rem;}
+h5{font-size: 1.4rem;}
+h6{font-size: 1.2rem;}
+img{vertical-align: middle; border:none 0;max-width: 100%;display: block;}
+a{cursor: pointer;text-decoration: none}
+a:focus{outline: none;}
+
+/*Html5*/
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+    display:block;
+}
+
+/*表&表单*/
+table{border-collapse:collapse; border-spacing:0; border:0}
+input,select,textarea{outline:none;border:none;background:none;}
+textarea{resize:none}
+label {vertical-align: middle}
+input:focus , textarea:focus {outline: none}    
+.text{height:20px;vertical-align: middle; border: 1px solid #CCC}
+.radio{	vertical-align:-3px;*vertical-align:-1px;border:none 0;	border-top-width: 0px}
+.btn {border:none 0;text-align:center;vertical-align: middle}
+
+/*文字排版*/
+.fb{font-weight:bold}
+.fn{font-weight:normal}
+.unl{text-decoration:underline;}
+.no_unl{text-decoration:none;}
+.strong{font-weight:bold}
+/*颜色*/
+.yellow{color: #fea201;}
+.retuntcolor{color: #c50000;}
+
+
+
+
+
+/*定位*/
+.tl{text-align:left}
+.tc{text-align:center}
+.tr{text-align:right}
+.tb {font-weight: bold;}
+.tn {font-weight: normal;}
+.fl{float:left;display:inline}
+.fr{float:right;display:inline}
+.cb{clear:both}
+.cl{clear:left}
+.cr{clear:right}
+.clearfix:before,.clearfix:after { content:""; display:table;}
+.clearfix:after{clear:both;}
+.clearfix{*zoom:1;}
+.vm{vertical-align:middle}
+.pr {position: relative;}
+.pa {position: absolute;}
+.zoom{zoom:1}
+.hidden{visibility:hidden}
+.none{display:none}
+.w{width:100%}
+.h{height:100%}
+.mc {margin:0px auto;}
+
+.text-ellipsis{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+/*margin*/
+.mt10{margin-bottom: 10px;}
+.mt4{margin-bottom: 4px;}
+/*背景颜色*/
+.bag-gray{background:#fafafa ;}
+.ui-bag{background:#84a93d ;}
+
+/*头部*/
+header.ws-header{padding: 0;height: 100px;}
+.nav{background-color: #84a93d;height: 44px;padding: 0 10px;}
+.mui-bar .mui-icon,.mui-bar .mui-title{color: #ffffff;}
+/*搜索框头部*/
+.search-box{height:44px;background: #ffffff;border-top:1px solid #ebebeb;border-bottom: 1px solid #ebebeb;margin-top: 6px;padding: 0 10px;}
+.search-box-img{width: 32px;height: 32px;float: left;border-radius: 50%;-webkit-border-radius:50%;margin:0 5px 0 0;margin-top: 5px;}
+.search-box .search-box-user{float: left;font-size: 16px; font-weight: 500; line-height: 40px;color: #646464;width: 65%;}
+.search-box-left{width: 40%;float: left;}
+.search-box-right{position: relative;width: 60%;float: right;}
+.search-box-right .search-box-icon{position: absolute;right: 5px;top:6px;font-size: 2.8rem;color: #6b6a6a;}
+.search-box-right .search-box-input{float: right;width: 96%;height: 34px;line-height: 34px;border:1px solid #c3c3c3;margin: 0;padding: 0;border-radius: 6px;-webkit-border-radius:6px;font-size: 1.4rem;padding-left: 10px;margin-top: 4px;padding-right: 30px;}
+/*尾部*/
+.mui-bar-tab .mui-tab-item.mui-active,.mui-bar-tab .mui-tab-item.mui-active .mui-icon{color: #84a93d;}
+.mui-bar-tab .mui-tab-item {background: #84a93d;color: #ffffff;}
+.mui-bar-tab a.mui-active{background: #ffffff;}
+
+
+/*去重*/
+
+
+/*内容*/
+.mui-bar-nav~.mui-content{background:none;padding-bottom: 55px;}
+.mui-bar-nav~.ws-content-gray{padding-top: 100px;background: #fafafa;padding-bottom: 50px;}
+.mui-bar-nav~.ws-content-white{padding-top: 100px;background: #ffffff;padding-bottom: 50px;}
+.mui-slider-indicator .mui-indicator,.mui-bar-nav{box-shadow: none;-webkit-box-shadow: none;padding: 0;}
+
+.mui-btn-success:enabled:active{background: #84a93d;border: 1px solid #84A93D;}
+
+
+.add-address-box .mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before{font-size: 1.6rem;}

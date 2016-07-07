@@ -1,0 +1,35 @@
+//
+   Created by Administrator on 2016/7/6.
+extends ./components/layout/layout
+block head
+    title 实体店
+    include ./components/header/headerCss
+    //页面所需css
+    link(rel="styleSheet" href="./static/css/index.css")
+block content
+    include ./components/header/header
+    +header('实体店')
+    .mui-content
+        .store-box
+            // 第一个实体店
+            .store-box-list
+                ul.mui-table-view
+                    li.mui-table-view-cell.mui-media
+                        a(href='javascript:;')
+                            img.mui-media-object.mui-pull-left(src='static/img/1.jpg')
+                            .mui-media-body
+                                span.message-box-title 实体店名字
+                                p.message-box-introdu
+                                    |联系人：
+                                    span.store-box-list-name 小张某
+                                    |联系电话：
+                                    span.store-box-list-text 13633333333
+                                span.store-box-list-detailaddress 详细地址：
+                                .store-box-list-address
+                                    |广东省佛山市禅城区华宝南路13号国家火炬创新创业园D栋2-6层
+                a.mui-block.mt10(href='')
+                    img(src='static/img/1.jpg')
+                a.mui-block.mt10(href='')
+                    img(src='static/img/1.jpg')
+    include ./components/footer/footer
+    include ./components/footer/footCommon

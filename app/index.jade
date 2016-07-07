@@ -1,0 +1,33 @@
+//微店主页
+extends ./components/layout/layout
+block head
+    title 首页
+    include ./components/header/headerCss
+    //页面所需css
+    link(rel="styleSheet" href="./static/css/index.css")
+block content
+    //方法参考：http://jade-lang.com/reference/mixins/
+    include ./components/header/header
+    +header('张某的微店')
+        .search-box
+            .search-box-left.mui-clearfix
+                img.search-box-img(src='static/img/user01.jpg')
+                h1.mui-ellipsis.search-box-user 张某的微店
+            .search-box-right.mui-clearfix
+                input.search-box-input(type='text', placeholder='请输入产品编号')
+                span.icon-uniE90A.search-box-icon
+    .mui-content.ws-content-white
+        include ./components/index/banner
+        include ./components/index/hotTab
+        include ./components/index/ad
+        include ./components/index/productList
+    include ./components/footer/footer
+    include ./components/footer/footCommon
+    script(src="handlebars/product/productListTpl.js")
+    script(src="js/entrance/index.js")
+    script(type='text/javascript').
+        //获得slider插件对象
+        var gallery = mui('.mui-slider');
+        gallery.slider({
+            interval: 2500//自动轮播周期，若为0则不自动播放，默认为0；
+        });

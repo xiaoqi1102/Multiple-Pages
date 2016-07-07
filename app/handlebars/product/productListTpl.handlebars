@@ -1,0 +1,16 @@
+{{#each data}}
+    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+        <div class="goods-list mui-clearfix">
+            <a href="">
+                <img src={{url}} class="goods-list-img"/>
+                <h1 class="mui-ellipsis goods-list-title">{{name}}</h1>
+							<span class="fr price mui-ellipsis">
+								<strong class="goods-box-price">{{price}}</strong>元/片
+							</span>
+                <div class="fl norms mui-ellipsis">
+                    规格:<span>{{specification}}</span>
+                </div>
+            </a>
+        </div>
+    </li>
+{{/each}}

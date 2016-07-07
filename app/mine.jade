@@ -1,0 +1,52 @@
+//
+   Created by Administrator on 2016/7/6.
+extends ./components/layout/layout
+block head
+    title 个人中心
+    include ./components/header/headerCss
+    //页面所需css
+    link(rel="styleSheet" href="./static/css/index.css")
+block content
+    include ./components/header/header
+    +header('个人中心')
+    .mui-content
+        .person-user-box
+            .person-user
+                img.person-user-img(src='static/img/2.jpg')
+                .person-user-title
+                    | 微信名称
+        .person-box
+            ul.mui-table-view.mui-grid-view.mui-grid-9
+                li.mui-table-view-cell.mui-media.mui-col-xs-4
+                    a(href='#')
+                        .person-box-list-bg-01.person-box-list-bg
+                            span.icon-my-order.person-box-icon
+                        .mui-media-body 我的订单
+                li.mui-table-view-cell.mui-media.mui-col-xs-4
+                    a(href='#')
+                        .person-box-list-bg-02.person-box-list-bg
+                            span.icon-design.person-box-icon
+                        .mui-media-body 装修设计
+                li.mui-table-view-cell.mui-media.mui-col-xs-4
+                    a(href='#')
+                        .person-box-list-bg-03.person-box-list-bg
+                            span.icon-message.person-box-icon
+                                span.mui-badge 5
+                        .mui-media-body 消息
+                li.mui-table-view-cell.mui-media.mui-col-xs-4
+                    a(href='#')
+                        .person-box-list-bg-04.person-box-list-bg
+                            span.icon-collect.person-box-icon
+                        .mui-media-body 收藏
+                li.mui-table-view-cell.mui-media.mui-col-xs-4
+                    a(href='#')
+                        .person-box-list-bg-05.person-box-list-bg
+                            span.icon-doubt.person-box-icon
+                        .mui-media-body 常见问题
+                li.mui-table-view-cell.mui-media.mui-col-xs-4
+                    a(href='#')
+                        .person-box-list-bg-06.person-box-list-bg
+                            span.icon-map2.person-box-icon
+                        .mui-media-body 收货地址管理
+    include ./components/footer/footer
+    include ./components/footer/footCommon

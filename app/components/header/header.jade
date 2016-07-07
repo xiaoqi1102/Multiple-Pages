@@ -1,0 +1,9 @@
+//用于改变h1标题以及头部下的html内容
+mixin header(name)
+    header(class=block?'mui-bar mui-bar-nav ws-header':'mui-bar mui-bar-nav')
+        nav.nav
+            a.mui-action-back.mui-icon.icon-left.mui-pull-left
+            h1.mui-title=name
+        if block
+            block
+        else

@@ -1,0 +1,82 @@
+//
+   Created by Administrator on 2016/7/6.
+extends ./components/layout/layout
+block head
+    title 购物车
+    include ./components/header/headerCss
+    //页面所需css
+    link(rel="styleSheet" href="./static/css/index.css")
+block content
+    include ./components/header/header
+    +header('购物车')
+    .mui-content
+        .shopbox.mui-text-center
+            form.mui-input-group
+                .shopcart-box
+                    ul.mui-table-view
+                        li.mui-table-view-cell.mui-media
+                            a(href='javascript:;')
+                                .mui-checkbox
+                                    input.shoplistinput(name='checkbox', value='Item 1', type='checkbox')
+                                img.mui-media-object.mui-pull-left(src='static/img/good01.jpg')
+                                .mui-media-body
+                                    span.collection-box-title 瓷    片
+                                    p.collection-box-introdu 编号:D610022      等级:优等
+                                    span.fl.price.mui-ellipsis
+                                        strong.collection-box-price 5.94
+                                        | 元/片
+                                .collectione-box-right
+                                    button.collectione-box-right-delect(type='button')
+                                        | 删除
+                                    span.shop-norms 规格：200*600
+                                    .mui-numbox
+                                        button.mui-btn.mui-btn-numbox-minus(type='button') -
+                                        input.mui-input-numbox(type='number')
+                                        button.mui-btn.mui-btn-numbox-plus(type='button') +
+                        li.mui-table-view-cell.mui-media
+                            a(href='javascript:;')
+                                .mui-checkbox
+                                    input.shoplistinput(name='checkbox', value='Item 1', type='checkbox')
+                                img.mui-media-object.mui-pull-left(src='static/img/1.jpg')
+                                .mui-media-body
+                                    span.collection-box-title 瓷    片
+                                    p.collection-box-introdu 编号:D610022      等级:优等
+                                    span.fl.price.mui-ellipsis
+                                        strong.collection-box-price 5.94
+                                        | 元/片
+                                .collectione-box-right
+                                    button.collectione-box-right-delect(type='button')
+                                        | 删除
+                                    span.shop-norms 规格：200*600
+                                    .mui-numbox
+                                        button.mui-btn.mui-btn-numbox-minus(type='button') -
+                                        input.mui-input-numbox(type='number')
+                                        button.mui-btn.mui-btn-numbox-plus(type='button') +
+                        li.mui-table-view-cell.mui-media
+                            a(href='javascript:;')
+                                .mui-checkbox
+                                    input.shoplistinput(name='checkbox', value='Item 1', type='checkbox')
+                                img.mui-media-object.mui-pull-left(src='static/img/1.jpg')
+                                .mui-media-body
+                                    span.collection-box-title 瓷    片
+                                    p.collection-box-introdu 编号:D610022      等级:优等
+                                    span.fl.price.mui-ellipsis
+                                        strong.collection-box-price 5.94
+                                        | 元/片
+                                .collectione-box-right
+                                    button.collectione-box-right-delect(type='button')
+                                        | 删除
+                                    span.shop-norms 规格：200*600
+                                    .mui-numbox
+                                        button.mui-btn.mui-btn-numbox-minus(type='button') -
+                                        input.mui-input-numbox(type='number')
+                                        button.mui-btn.mui-btn-numbox-plus(type='button') +
+    .shoppfooter
+       .mui-input-row.mui-checkbox.mui-left
+         label 全选
+         input(name='checkbox', value='Item 1', type='checkbox')
+       | 					合计：
+       span.shopp-footer-total 3000
+       button.shopp-footer-total-confirm 提交订单
+    include ./components/footer/footer
+    include ./components/footer/footCommon
