@@ -1,15 +1,14 @@
 # Multiple Pages
 
-1. **文档概述**
+**文档概述**
     - 基本开发环境: node
     - 开发准备: npm install 
     - 实时编译命令:  npm start
-    - 启用服务器: 
+启用服务器: 
          ```
-         supervisor server.js
-         
+         $ supervisor server.js
+         //浏览器打开 localhost:4000
          ```
-         浏览器打开 localhost:4000
 #### 关键技术
 - [ES6](http://es6.ruanyifeng.com/)
 - [gulp](http://www.gulpjs.com.cn/docs/api/)
